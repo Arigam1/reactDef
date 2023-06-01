@@ -14,6 +14,10 @@ class App extends React.Component {
     this.inputClick = this.inputClick.bind(this) // ЗАЛУПА
   }
 
+  componentDidUpdate(prevProp) {
+    if (this.state.helpText !== 'Help') console.log('some')
+  }
+
   render() {
     return (
       <div className='name'>
